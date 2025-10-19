@@ -11,7 +11,7 @@
   <img src="https://img.shields.io/badge/AI-Gemini%20API-purple?style=flat-square" />
   <img src="https://img.shields.io/badge/Version-1.0.0-blueviolet?style=flat-square" />
   <img src="https://img.shields.io/badge/Live-Demo-orange?style=flat-square" />
-  <img src="https://img.shields.io/badge/License-MIT-lightgrey?style=flat-square" />
+  
 </p>
 
 ---
@@ -34,27 +34,28 @@ Built with a React frontend and a Node.js/Express backend, it offers a seamless 
 
 ---
 
-## 🧩 Project Structure  
-BlogApp/
-│
-├─ client/ # React frontend
-│ ├─ src/
-│ │ ├─ components/
-│ │ ├─ pages/
-│ │ ├─ services/
-│ │ └─ App.js
-│ └─ package.json
-│
-├─ server/ # Node.js + Express backend
-│ ├─ controllers/
-│ ├─ models/
-│ ├─ routes/
-│ ├─ config/
-│ ├─ services/ # Gemini AI API integration
-│ ├─ server.js
-│ └─ .env
-│
-└─ README.md
+## 🧩 Project Structure 
+
+    BlogApp/
+    │
+    ├─ client/ # React frontend
+    │ ├─ src/
+    │ │ ├─ components/
+    │ │ ├─ pages/
+    │ │ ├─ services/
+    │ │ └─ App.js
+    │ └─ package.json
+    │
+    ├─ server/ # Node.js + Express backend
+    │ ├─ controllers/
+    │ ├─ models/
+    │ ├─ routes/
+    │ ├─ config/
+    │ ├─ services/ # Gemini AI API integration
+    │ ├─ server.js
+    │ └─ .env
+    │
+    └─ README.md
 
 
 ---
@@ -75,11 +76,24 @@ BlogApp/
 
 Create a .env file inside the server/ directory and add:
 
-    PORT=5000
-    MONGODB_URI="your_mongodb_connection_string"
-    JWT_SECRET="your_jwt_secret"
-    GEMINI_API_KEY="your_gemini_ai_api_key"
-
+     # JWT Secret
+    JWT_SECRET = 'secret@2025'
+    
+    # Admin Credentials
+    ADMIN_EMAIL = "admin@example.com"
+    ADMIN_PASSWORD = "admin1234"
+    
+    # MongoDB
+    MONGODB_URI = "Enter your mongodb_uri"
+    
+    # ImageKit
+    IMAGEKIT_PUBLIC_KEY = 'Enter your Imagekit public key'
+    IMAGEKIT_PRIVATE_KEY = 'Enter your Imagekit private key'
+    IMAGEKIT_URL_ENDPOINT = 'Enter your Imagekit URI endpoint'
+    
+    # Gemini API Key
+    GEMINI_API_KEY = 'Enter your api key'
+    
 
 Start the backend server:
 
